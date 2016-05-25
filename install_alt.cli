@@ -1,0 +1,4 @@
+/subsystem=infinispan/cache-container=testContainer:add(jndi-name=java:jboss/infinispan/container/testContainer)
+/subsystem=infinispan/cache-container=testContainer/local-cache=testCache:add()
+/subsystem=infinispan/cache-container=testContainer/local-cache=testCache/transaction=TRANSACTION:add(mode=NONE)
+/subsystem=infinispan/cache-container=testContainer/local-cache=testCache/eviction=EVICTION:add(strategy=LRU,max-entries=43210)
